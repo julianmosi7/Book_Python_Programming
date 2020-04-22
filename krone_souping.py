@@ -15,7 +15,6 @@ def write_to_file():
         f.writelines(first_article_tags)
         f.flush()
 
-
 soup = BeautifulSoup(page.text, 'html.parser')
 first_article = soup.findAll(class_='box col-xs-12 c_anmod krn-dup-checker krn-regio-dup-checker')
 write_to_file()
