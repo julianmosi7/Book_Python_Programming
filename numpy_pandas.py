@@ -28,4 +28,11 @@ print(f'All even values of array aranged: [{y[::2]}]')
 print(f'From 1th value step by to of array aranged: [{y[1::2]}]')
 print(f'Reverse array aranged: [{y[::-1]}]')
 
-
+grid = np.array([[1, 2, 3], [4, 5, 6]])
+x = np.array([3, 4, 5])
+z = np.array([[9], [9]])
+grid2 = np.array([[1, 2, 3], [17, 18, 19]])
+print('\n--------Arrange Array-------')
+print(f'\n con 1:1 or 2:2: {np.concatenate([grid, grid], axis=1)}')
+print(f'\n con 2:1 or 1:2: {np.vstack([x, grid2])}')
+print(f'\n con 2:1 or 1:2 rev: {np.hstack([grid2, z])}')
